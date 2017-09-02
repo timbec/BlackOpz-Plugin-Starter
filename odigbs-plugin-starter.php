@@ -52,5 +52,5 @@ add_action( 'init', __NAMESPACE__ . '\launch' );
  * @return void
  */
 function launch() {
-
+	// Do stuff
 }
