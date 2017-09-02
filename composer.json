@@ -1,0 +1,31 @@
+{
+	"name"           : "ODIGBS/odigbs-plugin-starter",
+	"description"    : "Starter Plugin using modern development tools (for class on knowthecode.io).",
+	"type"           : "project",
+	"keywords"       : ["wordpress", "wp", "plugin"],
+	"homepage"       : "https://github.com/blackopz",
+	"license"        : "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Preston K. Davis",
+			"email": "prestonkdavis@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.5.12"
+	},
+    "require-dev": {
+        "kint-php/kint" : "~2.1",
+        "filp/whoops" : "2.1"
+    },
+    "autoload": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "vendor-dir": "assets/vendor"
+    },
+    "minimum-stability": "dev"
+}
