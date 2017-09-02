@@ -1,6 +1,6 @@
 <?php
 /**
- * ODIGBS Plugin Starter
+ * BlackOpz Plugin Starter
  *
  * @package     ODIGBS
  * @author      Preston Davis
@@ -8,8 +8,8 @@
  * @license     GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name: ODIGBS Plugin Starter
- * Plugin URI:  https://github.com/blackopz/odigbs-plugin-starter
+ * Plugin Name: BlackOpz Plugin Starter
+ * Plugin URI:  https://github.com/blackopz/BlackOpz-Plugin-Starter
  * Description: Starter Plugin using modern development tools (for class on knowthecode.io).
  * Version:     1.0.0
  * Author:      Preston Davis
