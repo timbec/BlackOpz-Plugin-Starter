@@ -22,15 +22,20 @@
 
 namespace ODIGBS;
 
-use \Whoops\Handler\PrettyPageHandler;
-use \Whoops\Run;
-
-// Security Check: Exit if accessed directly
+/**
+ * ----------------------------------------------
+ * Security Check: Exit if accessed directly
+ * ----------------------------------------------
+ */
 if ( ! defined( 'ABSPATH' ) ) { 
 	exit( 'Cheatin&#8217; uh?' ); 
 }
 
-// Version Check: Bail if using < version 4.8
+/**
+ * ----------------------------------------------
+ * Version Check: Bail if using < version 4.8
+ * ----------------------------------------------
+ */
 global $wp_version;
 if ( ! version_compare( $wp_version, '4.8', '>=' ) ) {
 	die( 'You need at least at least version 4.8 of WordPress to use this plugin.' );
@@ -39,8 +44,13 @@ if ( ! version_compare( $wp_version, '4.8', '>=' ) ) {
 // Load up composer's autoload.php
 require_once( __DIR__ . "/assets/vendor/autoload.php" );
 
-$whoops = new Run();
-$error_page = new PrettyPageHandler();
-$error_page->setEditor( 'sublime' );
-$whoops->pushHandler( $error_page );
-$whoops->register();
+// Run the launch function
+add_action( 'init', __NAMESPACE__ . '\launch' );
+
+/**
+ * Get plugin ready to launch
+ * @return void
+ */
+function launch() {
+
+}

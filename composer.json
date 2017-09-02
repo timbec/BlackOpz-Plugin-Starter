@@ -18,7 +18,13 @@
         "kint-php/kint" : "~2.1",
         "filp/whoops" : "2.1"
     },
-    "autoload": {},
+    "autoload": {
+    	"classmap":[],
+    	"files": [
+    		"src/support/exceptions.php",
+    		"src/sandbox.php"
+    	]
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
