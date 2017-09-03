@@ -2,20 +2,20 @@
 /**
  * Exception handling
  *
- * @package ODIGBS
+ * @package BlackOpz\PluginName\Support
  * @since 1.0.0
  * @author Preston Davis <prestonkdavis@gmail.com>
  * @link https://sleepertechnologies.com
  * @license GNU-2.0+
  */
 
-namespace ODIGBS;
+namespace BlackOpz\PluginName\Support;
 
 use \Whoops\Handler\PrettyPageHandler;
 use \Whoops\Run;
 
 // Load whoops right after the plugin is loaded
-add_action( 'init', __NAMESPACE__ . '\load_whoops', 1 );
+add_action( 'plugins_loaded', __NAMESPACE__ . '\load_whoops', 1 );
 
 /**
  * Load Whoops.
@@ -31,5 +31,6 @@ function load_whoops(){
 	$whoops->register();
 }
 
-// Call load_whoops
+// This SHOULD be unnecessary as it is called on plugins_loaded. 
+// Must be something wrong with my namespacing.
 load_whoops();

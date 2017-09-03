@@ -22,7 +22,8 @@
     	"classmap":[],
     	"files": [
     		"src/support/exceptions.php",
-    		"src/sandbox.php"
+            "src/support/utilities.php",
+    		"src/sandbox/sandbox.php"
     	]
     },
     "extra": {

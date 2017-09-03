@@ -1,13 +1,14 @@
 <?php
 /**
- * Sandbox - testing purposes only
+ * Various Utility Functions
  *
- * @package ODIGBS
+ * @package BlackOpz\PluginName\Support\Utilties
  * @since 1.0.0
  * @author Preston Davis <prestonkdavis@gmail.com>
  * @link https://sleepertechnologies.com
  * @license GNU-2.0+
  */
 
-namespace ODIGBS;
+namespace BlackOpz\PluginName\Support\Utilties;
+
 
