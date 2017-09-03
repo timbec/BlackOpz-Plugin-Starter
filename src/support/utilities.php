@@ -10,5 +10,3 @@
  */
 
 namespace BlackOpz\PluginName\Support\Utilties;
-
-
